@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8FA1B4EC265995DB00230CDC /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA1B4E9265995DB00230CDC /* Constant.swift */; };
+		8FA1B4ED265995DB00230CDC /* CustomShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA1B4EA265995DB00230CDC /* CustomShape.swift */; };
+		8FA1B4EE265995DB00230CDC /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA1B4EB265995DB00230CDC /* Shop.swift */; };
+		8FA1B4F52659960400230CDC /* brand.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FA1B4F12659960400230CDC /* brand.json */; };
+		8FA1B4F62659960400230CDC /* player.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FA1B4F22659960400230CDC /* player.json */; };
+		8FA1B4F72659960400230CDC /* category.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FA1B4F32659960400230CDC /* category.json */; };
+		8FA1B4F82659960400230CDC /* product.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FA1B4F42659960400230CDC /* product.json */; };
+		8FA1B4FC2659964500230CDC /* CodableBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA1B4FB2659964500230CDC /* CodableBundleExtension.swift */; };
 		8FAFB49026598BA500C34571 /* TouchDownAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAFB48F26598BA500C34571 /* TouchDownAppApp.swift */; };
 		8FAFB49226598BA500C34571 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAFB49126598BA500C34571 /* ContentView.swift */; };
 		8FAFB49426598BA800C34571 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FAFB49326598BA800C34571 /* Assets.xcassets */; };
@@ -14,6 +22,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8FA1B4E9265995DB00230CDC /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		8FA1B4EA265995DB00230CDC /* CustomShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomShape.swift; sourceTree = "<group>"; };
+		8FA1B4EB265995DB00230CDC /* Shop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
+		8FA1B4F12659960400230CDC /* brand.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = brand.json; sourceTree = "<group>"; };
+		8FA1B4F22659960400230CDC /* player.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = player.json; sourceTree = "<group>"; };
+		8FA1B4F32659960400230CDC /* category.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = category.json; sourceTree = "<group>"; };
+		8FA1B4F42659960400230CDC /* product.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = product.json; sourceTree = "<group>"; };
+		8FA1B4FB2659964500230CDC /* CodableBundleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodableBundleExtension.swift; sourceTree = "<group>"; };
 		8FAFB48C26598BA500C34571 /* TouchDownApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchDownApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FAFB48F26598BA500C34571 /* TouchDownAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchDownAppApp.swift; sourceTree = "<group>"; };
 		8FAFB49126598BA500C34571 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +49,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8FA1B4E8265995DB00230CDC /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				8FA1B4E9265995DB00230CDC /* Constant.swift */,
+				8FA1B4EA265995DB00230CDC /* CustomShape.swift */,
+				8FA1B4EB265995DB00230CDC /* Shop.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		8FA1B4F02659960400230CDC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8FA1B4F12659960400230CDC /* brand.json */,
+				8FA1B4F22659960400230CDC /* player.json */,
+				8FA1B4F32659960400230CDC /* category.json */,
+				8FA1B4F42659960400230CDC /* product.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		8FA1B4FA2659964500230CDC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8FA1B4FB2659964500230CDC /* CodableBundleExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		8FAFB48326598BA500C34571 = {
 			isa = PBXGroup;
 			children = (
@@ -52,6 +97,9 @@
 		8FAFB48E26598BA500C34571 /* TouchDownApp */ = {
 			isa = PBXGroup;
 			children = (
+				8FA1B4FA2659964500230CDC /* Extension */,
+				8FA1B4F02659960400230CDC /* Data */,
+				8FA1B4E8265995DB00230CDC /* Utility */,
 				8FAFB48F26598BA500C34571 /* TouchDownAppApp.swift */,
 				8FAFB49126598BA500C34571 /* ContentView.swift */,
 				8FAFB49326598BA800C34571 /* Assets.xcassets */,
@@ -126,8 +174,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FA1B4F62659960400230CDC /* player.json in Resources */,
 				8FAFB49726598BA800C34571 /* Preview Assets.xcassets in Resources */,
+				8FA1B4F72659960400230CDC /* category.json in Resources */,
 				8FAFB49426598BA800C34571 /* Assets.xcassets in Resources */,
+				8FA1B4F52659960400230CDC /* brand.json in Resources */,
+				8FA1B4F82659960400230CDC /* product.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +190,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FA1B4ED265995DB00230CDC /* CustomShape.swift in Sources */,
 				8FAFB49226598BA500C34571 /* ContentView.swift in Sources */,
+				8FA1B4FC2659964500230CDC /* CodableBundleExtension.swift in Sources */,
 				8FAFB49026598BA500C34571 /* TouchDownAppApp.swift in Sources */,
+				8FA1B4EE265995DB00230CDC /* Shop.swift in Sources */,
+				8FA1B4EC265995DB00230CDC /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
