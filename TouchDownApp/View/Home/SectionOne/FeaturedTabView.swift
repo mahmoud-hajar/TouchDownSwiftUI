@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct FeaturedTabView: View {
+    
+    public let timer = Timer.publish(every: 3, on: .main, in: .common).autoconnect()
+    @State private var selection = 0
+
+    
     var body: some View {
-        TabView {
+        TabView(selection : $selection) {
           ForEach(players) { player in
             FeaturedItemView(player: player)
               .padding(.top, 10)
@@ -17,6 +22,12 @@ struct FeaturedTabView: View {
           }
         } //: TAB
         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+        .onReceive(timer, perform: { _ in
+            withAnimation{
+                print("selection is",selection)
+                selection = selection < 5 ? selection + 1 : 0
+            }
+        })
     }
 }
 
